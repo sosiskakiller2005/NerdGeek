@@ -66,6 +66,12 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Views\Pages\PcPage.xaml.cs">
+      <DependentUpon>PcPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\StartPage.xaml.cs">
+      <DependentUpon>StartPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Windows\AuthorisationWindow.xaml.cs">
       <DependentUpon>AuthorisationWindow.xaml</DependentUpon>
     </Compile>
@@ -158,15 +164,15 @@
       <DependentUpon>NerdGeekModel.edmx</DependentUpon>
       <LastGenOutput>NerdGeekModel.cs</LastGenOutput>
     </Content>
+    <Resource Include="Resources\right-arrow.png" />
+    <Resource Include="Resources\StartImage.png" />
     <Resource Include="Resources\AuthBackground.png" />
     <Resource Include="Resources\background.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\Pages\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Page Include="Styles\ButtonStyle.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -215,6 +221,14 @@
     <Page Include="Styles\TextBoxStyle.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Pages\PcPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\StartPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Windows\AuthorisationWindow.xaml">
       <SubType>Designer</SubType>

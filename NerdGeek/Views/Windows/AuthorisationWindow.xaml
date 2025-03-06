@@ -25,15 +25,11 @@
                 <Border Height="10"/>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                     <Button Name="SignUpBtn" Click="SignUpBtn_Click" Width="260">
-                        <Button.Content>
-                            <TextBlock Text="Зарегистрироваться" Foreground="Black" />
-                        </Button.Content>
+                        <TextBlock Text="Зарегистрироваться" Foreground="Black" />
                     </Button>
                     <Border Width="50"/>
                     <Button Name="AuthorisationBtn" Click="AuthorisationBtn_Click" Width="150">
-                        <Button.Content>
-                            <TextBlock Text="Войти" Foreground="Black"/>
-                        </Button.Content>
+                        <TextBlock Text="Войти" Foreground="Black"/>
                     </Button>
                 </StackPanel>
             </StackPanel>

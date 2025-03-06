@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NerdGeek.Views.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,37 @@ namespace NerdGeek.Views.Windows
         public MenuWindow()
         {
             InitializeComponent();
+            MainFrm.Navigate(new StartPage());
+        }
+
+        private void PCHl_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrm.Navigate(new PcPage());
+        }
+
+        private void LaptopsHl_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MonitorsHl_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void KeyboardsHl_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MousesHl_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void AccesoriesHl_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

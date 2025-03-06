@@ -1,0 +1,51 @@
+﻿<Page x:Class="NerdGeek.Views.Pages.PcPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:NerdGeek.Views.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="650" d:DesignWidth="1200"
+      Title="PcPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width=".7*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+
+        <StackPanel VerticalAlignment="Center">
+            <Border Height="100" Width="350" Background="#FF313030">
+                <StackPanel Margin="10" Orientation="Horizontal">
+                    <StackPanel>
+                        <TextBlock HorizontalAlignment="Left"><Hyperlink Name="GamingHl" Click="GamingHl_Click" FontSize="22">Игровые</Hyperlink></TextBlock>
+                        <TextBlock Text="Лучшее качество с минимальной задержкой" FontSize="16" TextWrapping="Wrap" Width="280"/>
+                    </StackPanel>
+                    <Button Name="GamingBtn" Click="GamingHl_Click" Style="{x:Null}" Width="30" Height="30" BorderThickness="0" Margin="20 0 0 0">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/Resources/right-arrow.png"/>
+                        </Button.Background>
+                    </Button>
+                </StackPanel>
+            </Border>
+            <Border Height="40"/>
+            <Border Height="100" Width="350" Background="#FF313030">
+                <StackPanel Margin="10" Orientation="Horizontal">
+                    <StackPanel>
+                        <TextBlock HorizontalAlignment="Left"><Hyperlink Name="OptimalHl" Click="OptimalHl_Click" FontSize="22">Оптимальные</Hyperlink></TextBlock>
+                        <TextBlock Text="Бюджетный варинты" FontSize="16" TextWrapping="Wrap" Width="280"/>
+                    </StackPanel>
+                    <Button Name="OptimalBtn" Click="OptimalHl_Click" Style="{x:Null}" Width="30" Height="30" BorderThickness="0" Margin="20 0 0 0">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/Resources/right-arrow.png"/>
+                        </Button.Background>
+                    </Button>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+
+        <ListBox Name="ProductsLb" Grid.Column="1" Style="{StaticResource ProductsLb}" ScrollViewer.CanContentScroll="True">
+            
+        </ListBox>
+    </Grid>
+</Page>

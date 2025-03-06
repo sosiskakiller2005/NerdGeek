@@ -5,8 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NerdGeek.Views.Windows"
         mc:Ignorable="d"
-        Title="MenuWindow" Height="450" Width="800">
+        Title="NerdGeek" Height="800" Width="1200" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <ImageBrush ImageSource="/Resources/background.png"/>
+    </Window.Background>
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".2*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0 25 0 0">
+            <TextBlock><Hyperlink Name="PCHl" Click="PCHl_Click">Игровые пк</Hyperlink></TextBlock>
+            <Border Width="20"/>
+            <TextBlock><Hyperlink Name="LaptopsHl" Click="LaptopsHl_Click">Ноутбуки</Hyperlink></TextBlock>
+            <Border Width="20"/>
+            <TextBlock><Hyperlink Name="MonitorsHl" Click="MonitorsHl_Click">Мониторы</Hyperlink></TextBlock>
+            <Border Width="20"/>
+            <TextBlock><Hyperlink Name="KeyboardsHl" Click="KeyboardsHl_Click">Клавиатуры</Hyperlink></TextBlock>
+            <Border Width="20"/>
+            <TextBlock><Hyperlink Name="MousesHl" Click="MousesHl_Click">Мыши</Hyperlink></TextBlock>
+            <Border Width="20"/>
+            <TextBlock><Hyperlink Name="AccesoriesHl" Click="AccesoriesHl_Click">Комплектующие</Hyperlink></TextBlock>
+        </StackPanel>
+
+        <Frame Name="MainFrm" Grid.Row="1" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Window>
