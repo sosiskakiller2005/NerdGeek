@@ -164,6 +164,9 @@
       <DependentUpon>NerdGeekModel.edmx</DependentUpon>
       <LastGenOutput>NerdGeekModel.cs</LastGenOutput>
     </Content>
+    <Resource Include="Resources\exit-icon.png" />
+    <Resource Include="Resources\search-icon.png" />
+    <Resource Include="Resources\translate-icon.png" />
     <Resource Include="Resources\right-arrow.png" />
     <Resource Include="Resources\StartImage.png" />
     <Resource Include="Resources\AuthBackground.png" />

@@ -55,5 +55,20 @@ namespace NerdGeek.Views.Windows
         {
 
         }
+
+        private void SearchBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void TranslateBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ExitBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }

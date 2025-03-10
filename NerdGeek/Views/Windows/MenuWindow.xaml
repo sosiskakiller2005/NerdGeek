@@ -30,5 +30,20 @@
         </StackPanel>
 
         <Frame Name="MainFrm" Grid.Row="1" NavigationUIVisibility="Hidden"/>
+        <Button Name="SearchBtn" Click="SearchBtn_Click" Style="{x:Null}" BorderThickness="0" Margin="1070,25,110,86">
+            <Button.Background>
+                <ImageBrush ImageSource="/Resources/search-icon.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="TranslateBtn" Click="TranslateBtn_Click" Style="{x:Null}" BorderThickness="0" Margin="1100,25,80,86">
+            <Button.Background>
+                <ImageBrush ImageSource="/Resources/translate-icon.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="ExitBtn" Click="ExitBtn_Click" Style="{x:Null}" BorderThickness="0" Margin="1130,25,50,86">
+            <Button.Background>
+                <ImageBrush ImageSource="/Resources/exit-icon.png"/>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>
