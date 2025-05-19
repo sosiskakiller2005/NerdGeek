@@ -16,6 +16,8 @@
         <AssociationConnector Association="NerdGeekDbModel.FK_Order_User" ManuallyRouted="false" />
         <AssociationConnector Association="NerdGeekDbModel.FK_OrderProduct_Order" ManuallyRouted="false" />
         <AssociationConnector Association="NerdGeekDbModel.FK_OrderProduct_Product" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="NerdGeekDbModel.Status" Width="1.5" PointX="3.375" PointY="4.875" />
+        <AssociationConnector Association="NerdGeekDbModel.FK_Order_Status" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

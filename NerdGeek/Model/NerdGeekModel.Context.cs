@@ -31,5 +31,6 @@ namespace NerdGeek.Model
         public DbSet<OrderProduct> OrderProduct { get; set; }
         public DbSet<Product> Product { get; set; }
         public DbSet<User> User { get; set; }
+        public DbSet<Status> Status { get; set; }
     }
 }

@@ -66,6 +66,12 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Model\Status.cs">
+      <DependentUpon>NerdGeekModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\OrdersPage.xaml.cs">
+      <DependentUpon>OrdersPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Pages\PcPage.xaml.cs">
       <DependentUpon>PcPage.xaml</DependentUpon>
     </Compile>
@@ -224,6 +230,10 @@
     <Page Include="Styles\TextBoxStyle.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Pages\OrdersPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Pages\PcPage.xaml">
       <SubType>Designer</SubType>

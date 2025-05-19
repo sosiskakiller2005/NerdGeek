@@ -1,4 +1,5 @@
-﻿using NerdGeek.Views.Pages;
+﻿using NerdGeek.AppData;
+using NerdGeek.Views.Pages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -54,6 +55,11 @@ namespace NerdGeek.Views.Windows
         private void AccesoriesHl_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void OrdersHl_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrm.Navigate(new OrdersPage());
         }
 
         private void SearchBtn_Click(object sender, RoutedEventArgs e)
