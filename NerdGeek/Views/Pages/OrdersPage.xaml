@@ -25,6 +25,6 @@
             <TextBlock Text="Итого" Grid.Column="4"/>
         </Grid>
 
-        <ListBox Name="OrdersLb" Style="{StaticResource OrdersLb}" HorizontalAlignment="Center" Width="1100" Height="500"/>
+        <ListBox Name="OrdersLb" Style="{StaticResource OrdersLb}" HorizontalAlignment="Center" Width="1100" Height="500" MouseDoubleClick="OrdersLb_MouseDoubleClick"/>
     </StackPanel>
 </Page>

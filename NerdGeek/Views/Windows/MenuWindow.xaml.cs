@@ -25,6 +25,7 @@ namespace NerdGeek.Views.Windows
         {
             InitializeComponent();
             MainFrm.Navigate(new StartPage());
+            FrameHelper.selectedFrame = MainFrm;
         }
 
         private void PCHl_Click(object sender, RoutedEventArgs e)
@@ -70,6 +71,11 @@ namespace NerdGeek.Views.Windows
         private void TranslateBtn_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void ProfileHl_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrm.Navigate(new ProfilePage(AuthorisationHelper.selectedUser));
         }
 
         private void ExitBtn_Click(object sender, RoutedEventArgs e)

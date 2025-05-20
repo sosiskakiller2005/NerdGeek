@@ -1,4 +1,5 @@
 ﻿using NerdGeek.Model;
+using NerdGeek.Views.Windows;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,6 +27,15 @@ namespace NerdGeek.Views.Pages
         {
             InitializeComponent();
             OrdersLb.ItemsSource = _context.Order.ToList();    
+        }
+
+        private void OrdersLb_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            AddEditOrderWindow addEditOrderWindow = new AddEditOrderWindow(OrdersLb.SelectedItem as Order);
+            if (addEditOrderWindow.ShowDialog() == true)
+            {
+                OrdersLb.ItemsSource = _context.Order.ToList();    
+            }
         }
     }
 }

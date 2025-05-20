@@ -35,6 +35,8 @@
                 <TextBlock><Hyperlink Name="AccesoriesHl" Click="AccesoriesHl_Click">Комплектующие</Hyperlink></TextBlock>
                 <Border Width="15"/>
                 <TextBlock><Hyperlink Name="OrdersHl" Click="OrdersHl_Click">Заказы</Hyperlink></TextBlock>
+                <Border Width="15"/>
+                <TextBlock><Hyperlink Name="ProfileHl" Click="ProfileHl_Click">Профиль</Hyperlink></TextBlock>
             </StackPanel>
 
             <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Top" Margin="0 20 0 0" HorizontalAlignment="Center">
