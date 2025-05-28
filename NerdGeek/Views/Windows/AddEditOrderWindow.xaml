@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NerdGeek.Views.Windows"
         mc:Ignorable="d"
-        Title="Добавить\редактировать закащ" Height="450" Width="800"
+        Title="Добавить\редактировать заказ" Height="450" Width="800"
         WindowStartupLocation="CenterScreen" Background="Black">
     <Grid Name="OrderGrid" Margin="20">
         <Grid.ColumnDefinitions>
@@ -18,19 +18,26 @@
             <Border Height="20"/>
             <TextBlock Text="Дата:" Height="40"/>
             <Border Height="20"/>
-            <TextBlock Text="Emial:" Height="40"/>
+            <TextBlock Text="Email:" Height="40"/>
             <Border Height="20"/>
             <TextBlock Text="Итого:" Height="40"/>
             <Border Height="20"/>
         </StackPanel>
 
         <StackPanel Grid.Column="1">
-            <ComboBox Name="StatusCmb" SelectedItem="{Binding Status}"/>
+            <ComboBox Name="StatusCmb" Style="{StaticResource roundedCornersComboBox}" SelectedItem="{Binding Status}"/>
             <Border Height="20"/>
             <DatePicker Name="DateDp" SelectedDate="{Binding DateTime, StringFormat={}{0:dd.MM.yyy mm:HH}}"/>
             <Border Height="20"/>
             <TextBox Name="EmailTb" Text="{Binding Client.Email}"/>
+            <Border Height="20"/>
             <TextBlock Text="{Binding Amount, StringFormat={}{0:## ### ₽}}"/>
+            <Border Height="20"/>
+            <Button Name="SaveBtn" Click="SaveBtn_Click">
+                <Button.Content>
+                    <TextBlock Text="Сохранить" Foreground="Black"/>
+                </Button.Content>
+            </Button>
         </StackPanel>
     </Grid>
 </Window>

@@ -1,4 +1,5 @@
-﻿using NerdGeek.Model;
+﻿using NerdGeek.AppData;
+using NerdGeek.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,6 +30,16 @@ namespace NerdGeek.Views.Windows
             StatusCmb.ItemsSource = _context.Status.ToList();
             StatusCmb.DisplayMemberPath = "Name";
             OrderGrid.DataContext = selectedOrder;
+        }
+
+        private void SaveBtn_Click(object sender, RoutedEventArgs e)
+        {
+            _selectedOrder.Status = (Status)StatusCmb.SelectedItem;
+            _selectedOrder.DateTime = (DateTime)DateDp.SelectedDate;
+            _selectedOrder.Client.Email = EmailTb.Text;
+            _context.SaveChanges();
+            MessageBoxHelper.Information("Заказ успешно сохранен!");
+            DialogResult = true;
         }
     }
 }
